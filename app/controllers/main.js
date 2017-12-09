@@ -26,12 +26,5 @@ angular.module('KrChessApp')
                 return new Array(num);
             }
 
-            $scope.Selected = null;
-            $scope.setSelected = function(indexString) {
-                $scope.Selected = indexString;
-                console.log(indexString);
-            }
-
-
         }
     ]);
