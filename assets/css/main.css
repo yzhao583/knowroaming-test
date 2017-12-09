@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  margin: 5px;
+  padding: 5px;
+}
+
+.row {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row no-wrap;
+      flex-flow: row no-wrap;
+}
+
+.column {
+  height: 100px;
+  width: 100px;
+  background: white;
+  border: 1px solid black;
+}
+
+.row:nth-child(2n+1) .column:nth-child(2n+1) {
+  background-color: black;
+  color: white;
+}
+
+.row:nth-child(2n) .column:nth-child(2n) {
+  background-color: black;
+  color: white;
+}
+
+.active{
+    background-color: blue;
+    color: yellow;
+}

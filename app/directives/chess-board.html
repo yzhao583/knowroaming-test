@@ -1,0 +1,11 @@
+<!-- INSERT CONTENT HERE -->
+<div class=content ng-app="KrChessApp" ng-controller="MainController">
+    <div class="row" ng-repeat="i in getNumber(dim.rows) track by $index">
+        <div class="column" id="{{$parent.$index +1 }}X{{$index+1}}"
+        ng-repeat="i in getNumber(dim.cols) track by $index"
+        ng-click="setSelected()"
+        ng-class="{active: $Selected === active}">
+            {{$parent.$index +1 }} X {{$index+1}}
+        </div>
+    </div>
+</div>
